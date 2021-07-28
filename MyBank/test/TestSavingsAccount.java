@@ -7,6 +7,8 @@ import com.vcs.savings.SavingsAccount;
 
 public class TestSavingsAccount 
 {
+	
+	
 
 	@Test
 	public void testGetInfo()
@@ -14,4 +16,12 @@ public class TestSavingsAccount
 		assertFalse(SavingsAccount.getInfo().equals(""));
 		
 	}
+	
+	@Test
+	public void testEmptyGetInfo()
+	{
+		assertTrue(SavingsAccount.getEmptyInfo().equals(""));
+		
+	}
+	
 }
